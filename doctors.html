@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="index.css">
+    <style>
+      .header {
+  padding: 1rem 9%;
+  padding-left: 2%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  background: var(--blue);
+}
+.header .logo img {
+  width: 10rem;
+  height: 5rem;
+  margin-right: 7rem;
+}
+
+.header .navbar a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+  margin-left: 1rem;
+  list-style-type: none;
+  border-radius: 0.3rem;
+  padding: 0.8rem 1.5rem;
+}
+header .navbar a.active{
+  background: var(--green);
+}
+header .navbar a:hover {
+  /* text-decoration: underline; */
+  background: var(--green);
+  color: #fff;
+}
+header .item:hover{
+  background-color: var(--green);
+}
+
+.header #appoint {
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-right: 10px;
+  margin-left: 3rem;
+  background: #fff;
+}
+.header #appoint:hover {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  color: var(--green);
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.fa-magnifying-glass {
+  font-size: 2rem;
+  color: #fff;
+}
+      .wrapper {
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem,30rem));
+  gap: 7rem;
+  padding-left:5rem;
+}
+.card1 {
+  width: 280px;
+  height: 340px;
+  border-radius: 7px;
+  padding: 1.5rem;
+  background: url('image/bg1.jpg');
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: 0.4s ease-out;
+  /* margin-left: 5rem;
+  margin-right: 5rem; */
+  
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+      .heading{
+        margin:2rem;
+        margin-top:9rem;
+      }
+      .footer{
+        margin-top:3rem;
+        background: #f5f5f5;
+      }
+      
+    </style>
+</head>
+<body>
+  <header class="header" id="navbar">
+      
+    <div class="logo">
+        <img src="geims.png" alt="">
+    </div>
+
+    <nav class="navbar" >
+    
+            <a  href="index.html" >Home</a>
+            <a  href="about.html" >About</a>
+        
+            <a href="services.html" >Services</a>
+    
+        <a class="active" href="doctors.html" >Doctors</a>
+    <a href="gallery.html" >Gallery</a>
+    <a href="https://goo.gl/maps/uwd4QM6CunCBWDJp9">Location</a></li>
+
+    </nav>
+
+</div> 
+<div id="menu-btn" class="fas fa-bars"></div> 
+</header>
+
+  <h1 class="heading">Our <span>Doctors</span> </h1>
+<div class="wrapper">    
+    <div class="card1"><img src="image/dctr1.png"/>
+      <div class="info">
+        <h1>Dr.Anu Radha</h1>
+        <p>Consultant (Radiology)</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr2.png"/>
+      <div class="info">
+        <h1>Dr.Hina Mittal</h1>
+        <p>Senior Consultant (Obstetrics & Gynaecology)</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr3.png"/>
+      <div class="info">
+        <h1>Dr. Ishfag Ahmed Baba</h1>
+        <p>Consultant & Head (Emergency Medicine)</p>
+      </div>
+    </div>
+  </div>
+<br><br><br><br><br>
+<div class="wrapper">    
+    <div class="card1"><img src="image/dctr4.png"/>
+      <div class="info">
+        <h1>Dr. Neeta Bansal</h1>
+        <p>Senior Consultant & Head (Obstetrics & Gynaecology)</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr5.png"/>
+      <div class="info">
+        <h1>Dr. Nitin Kumar Bansal</h1>
+        <p>Senior Consultant & Head (Internal Medicine)</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr6.png"/>
+      <div class="info">
+        <h1>Dr. Puneet Tyagi</h1>
+        <p>Medical Director Senior Consultant & Head (Respiratory Medicine)</p>
+      </div>
+    </div>
+  </div>
+<br><br><br><br><br>
+<div class="wrapper">    
+    <div class="card1"><img src="image/dctr7.png"/>
+      <div class="info">
+        <h1>Dr. Sachin Dey Munjal</h1>
+        <p>Senior Consultant & Head (Gastroentrology)</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr8.png"/>
+      <div class="info">
+        <h1>Dr Satish Ghansala</h1>
+        <p>Management Representative & Head Dental</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr9.png"/>
+      <div class="info">
+        <h1>Dr. Jianendra Kumar Singh</h1>
+        <p>Consultant (Internal Medicine)</p>
+      </div>
+    </div>
+  </div>
+<br><br><br><br><br>
+<div class="wrapper">    
+    <div class="card1"><img src="image/dctr10.png"/>
+      <div class="info">
+        <h1>Dr. Atul Kumar</h1>
+        <p>Consultant (Anaesthesia)</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr11.png"/>
+      <div class="info">
+        <h1>Dr. Kartikeya Issar</h1>
+        <p>Dental Surgeon</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr12.png"/>
+      <div class="info">
+        <h1>Dr. Brijendra Mohan</h1>
+        <p>Consultant (Emergency Medicine)</p>
+      </div>
+    </div>
+  </div>
+<br><br><br><br><br>
+<div class="wrapper">    
+    <div class="card1"><img src="image/dctr13.png"/>
+      <div class="info">
+        <h1>Dr. Kuldeep Singh Yadav</h1>
+        <p>Consultant (General Surgery)</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr14.png"/>
+      <div class="info">
+        <h1>Dr. Elvis Benjamin</h1>
+        <p>Consultant (Orthopedics)</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr15.png"/>
+      <div class="info">
+        <h1>Dr. Kumar Gaurav Sharma</h1>
+        <p>Consultant (Non-Invasive Cardiology)</p>
+      </div>
+    </div>
+  </div>
+<br><br><br><br><br>
+<div class="wrapper">    
+    <div class="card1"><img src="image/dctr16.png"/>
+      <div class="info">
+        <h1>Dr. Gopesh Gupta</h1>
+        <p>Senior Consultant & Head (Radiology)</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr17.png"/>
+      <div class="info">
+        <h1>Dr. Arunil Gupta</h1>
+        <p>Consultant (Emergency Medicine)</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr18.png"/>
+      <div class="info">
+        <h1>Dr. Neha Luthra</h1>
+        <p>Consultant (Emergency Medicine)</p>
+      </div>
+    </div>
+  </div>
+<br><br><br><br><br>
+<div class="wrapper">    
+    <div class="card1"><img src="image/dctr19.png"/>
+      <div class="info">
+        <h1>Dr. Ronika Negi</h1>
+        <p>Junior Resident (Dental)</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr20.png"/>
+      <div class="info">
+        <h1>Dr. Saurav Bhargavar</h1>
+        <p>Oral & Maxillofacial Surgeon</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr21.png"/>
+      <div class="info">
+        <h1>Dr. Apurb Ranjan Patnaik</h1>
+        <p>Endodontist</p>
+      </div>
+    </div>
+  </div>
+<br><br><br><br><br>
+<div class="wrapper">    
+    <div class="card1"><img src="image/dctr22.png"/>
+      <div class="info">
+        <h1>Dr. Imliwati Aier</h1>
+        <p>Senior Consultant & Head (Critical Care)</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr23.png"/>
+      <div class="info">
+        <h1>Dr. Rupali Tyagi</h1>
+        <p>Senior Consultant (Ophthalmology)</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr24.png"/>
+      <div class="info">
+        <h1>Dr. Shantanu Shubham</h1>
+        <p>Consultant (Pediatrics Neonatology)</p>
+      </div>
+    </div>
+  </div>
+<br><br><br><br><br>
+<div class="wrapper">    
+    <div class="card1"><img src="image/dctr25.png"/>
+      <div class="info">
+        <h1>Dr. Ankur Kapoor</h1>
+        <p>Senior Consultant (Neurosurgery)</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr26.png"/>
+      <div class="info">
+        <h1>Dr.Priyanka</h1>
+        <p>Senior Consultant (Anaesthesiology)</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr27.png"/>
+      <div class="info">
+        <h1>Dr. Ankit Aggarwal</h1>
+        <p>Consultant (Pulmonologist)</p>
+      </div>
+    </div>
+    </div>
+<br><br><br><br><br>
+<div class="wrapper">    
+    <div class="card1"><img src="image/dctr28.png"/>
+      <div class="info">
+        <h1>Dr. Subin Mathew Vattathara</h1>
+        <p>DGM Operations</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr29.png"/>
+      <div class="info">
+        <h1>Dr. Ankit Khanduri</h1>
+        <p>Senior Consultant (Microbiology)</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr30.png"/>
+      <div class="info">
+        <h1>Dr. Ajay Patel</h1>
+        <p>Consultant (Anaesthesia)</p>
+      </div>
+    </div>
+    </div>
+<br><br><br><br><br>
+<div class="wrapper">    
+    <div class="card1"><img src="image/dctr31.png"/>
+      <div class="info">
+        <h1>Dr (Ex Capt.) Nalin Bhatia</h1>
+        <p>Director (Pathology)</p>
+      </div>
+    </div>
+    <div class="card1"><img src="image/dctr32.png"/>
+      <div class="info">
+        <h1>Dr. Apoorva Jain</h1>
+        <p>Consultant (Pediatrics Neonatology)</p>
+      </div>
+    </div>
+</div>
+
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#"> <i class="fas fa-chevron-right"></i> home </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> services </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> about </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> doctors </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> book </a>
+      </div>
+
+      <div class="box">
+          <h3>our services</h3>
+          <a href="#"> <i class="fas fa-chevron-right"></i> dental care </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> message therapy </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> cardiology </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> diagnosis </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> ambulance service </a>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+          <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+          <a href="#"> <i class="fas fa-envelope"></i> negis2673@gmail.com </a>
+          <a href="#"> <i class="fas fa-envelope"></i> negis2673@gmail.com </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> dehradun, india - 248007 </a>
+      </div>
+
+      <div class="box">
+          <h3>follow us</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+          <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+          <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+      </div>
+
+  </div>
+
+  <div class="credit"> created by <span>Sagar Negi</span> | all rights reserved </div>
+
+</section>
+
+</body>
+</html>
